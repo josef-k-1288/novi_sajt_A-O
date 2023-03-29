@@ -150,7 +150,7 @@ if (isset($_POST['submit'])) {
             </div>
 
             <div class="box">
-                <img src="images/nove_ikonice/code.svg" alt=""> 
+                <img src="images/nove_ikonice/code.svg" alt="">
                 <h3>SEO optimizacija</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
             </div>
@@ -303,7 +303,37 @@ if (isset($_POST['submit'])) {
 
     <!-- footer section -->
 
+    <section class="footer">
+        <div class="box-container container">
+            <div class="box">
+                <i class="fas fa-phone"></i>
+                <h3>phone number</h3>
+                <p>+123-456-7890</p>
+                <p>+111-222-333</p>
+            </div>
 
+            <div class="box">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>our address</h3>
+                <p>gaudijeva, zemun</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-map-marker-alt"></i>
+                <h3>opening hours</h3>
+                <p>00:08am to 10pm</p>
+            </div>
+
+            <div class="box">
+                <i class="fas fa-envelope"></i>
+                <h3>email address</h3>
+                <p>obradovic.aleksa@gmail.com</p>
+                <p>olukanovic@gmail.com</p>
+            </div>
+        </div>
+
+        <div class="credit"> &copy; copyright @ <?php echo date('Y'); ?> by <span>ao web development & graphic design</span> </div>
+    </section>
 
 
     <!-- footer section ends -->
