@@ -1,13 +1,14 @@
 <?php
-$conn = mysqli_connect('localhost', 'root', '', 'dentist_db') or die('connect failed');
+$conn = mysqli_connect('localhost', 'root', '', 'novi_sajt_ao') or die('connect failed');
 
 if (isset($_POST['submit'])) {
     $name = mysqli_real_escape_string($conn, $_POST['name']);
     $email = mysqli_real_escape_string($conn, $_POST['email']);
-    $number = $_POST['number'];
-    $date = $_POST['date'];
+    $send = mysqli_real_escape_string($conn, $_POST['send']);
+    // $number = $_POST['number'];
+    // $date = $_POST['date'];
 
-    $insert = mysqli_query($conn, "INSERT INTO `contact_form` (name, email, number, date) VALUES('$name', '$email', '$number', '$date')") or die('query failed');
+    $insert = mysqli_query($conn, "INSERT INTO `ao_contact` (name, email, send) VALUES('$name', '$email', '$send')") or die('query failed');
 
     if ($insert) {
         $message[] = 'uspešno ste poslali poruku!';
@@ -107,7 +108,7 @@ if (isset($_POST['submit'])) {
                 </div>
 
                 <div class="col-md-6 content">
-                    <span>about us</span>
+                    <span>O nama</span>
                     <h3>Lorem Ipsum is simply dummy text....</h3>
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry .................</p>
                     <a href="#contact" class="link-btn">Kontakt</a>
@@ -127,30 +128,30 @@ if (isset($_POST['submit'])) {
     <!-- services section starts -->
 
     <section class="services" id="services">
-        <h1 class="heading">our services</h1>
+        <h1 class="heading">Naši servisi</h1>
 
         <div class="box-container container">
 
             <div class="box">
-                <img src="images/nove_ikonice/code.svg" alt="">
+                <img src="images/nove_ikonice/wordpress.svg" alt="">
                 <h3>Izrada sajtova CMS - wordpress</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
             </div>
 
             <div class="box">
                 <img src="images/nove_ikonice/code.svg" alt="">
+                <h3>Izrada custom sajtova</h3>
+                <p>Custom dizajn sajta podrazumijeva programiranje sajta od početka ili prilagođavanje koda uključujući CSS, JavaScript, PHP, MySQL. Prednosti custom web stranice su brzina sajta, preglednost i jednostavnost stranice, pristupačne promjene na stranici jer je programski kod jedinstven</p>
+            </div>
+
+            <div class="box">
+                <img src="images/nove_ikonice/responsive.svg" alt="">
                 <h3>Responzivni dizajn</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
             </div>
 
             <div class="box">
-                <img src="images/nove_ikonice/code.svg" alt="">
-                <h3>Dizajn Logo-a</h3>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-            </div>
-
-            <div class="box">
-                <img src="images/nove_ikonice/code.svg" alt="">
+                <img src="images/nove_ikonice/seo.svg" alt="">
                 <h3>SEO optimizacija</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
             </div>
@@ -162,8 +163,8 @@ if (isset($_POST['submit'])) {
             </div>
 
             <div class="box">
-                <img src="images/nove_ikonice/code.svg" alt="">
-                <h3>Cavity inspection</h3>
+                <img src="images/nove_ikonice/social-media.svg" alt="">
+                <h3>Društvene mreže</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
             </div>
 
@@ -175,10 +176,54 @@ if (isset($_POST['submit'])) {
 
 
 
+    <!-- subsection section -->
+
+    <section class="icons">
+        <!-- <h1 class="heading">Tools</h1> -->
+
+        <div class="box-container container">
+            <div class="box">
+                <i class="fab fa-html5"></i>
+                <h3>HTML5</h3>
+            </div>
+
+            <div class="box">
+                <i class="fa-brands fa-css3-alt"></i>
+                <h3>CSS3</h3>
+            </div>
+
+            <div class="box">
+                <i class="fa-brands fa-js"></i>
+                <h3>Javascript</h3>
+               
+            </div>
+
+            <div class="box">
+                <i class="fa-brands fa-php"></i>
+                <h3>PHP</h3>
+            </div>
+
+            <div class="box">
+                <i class="fa-brands fa-wordpress"></i>
+                <h3>Wordpress</h3>
+                
+            </div>
+        </div>
+
+        
+    </section>
+
+    <!-- icons subsection ends -->
+
+
+
+
+
+
     <!-- process section start -->
 
     <section class="process">
-        <h1 class="heading">work process</h1>
+        <h1 class="heading">proces izrade</h1>
 
         <div class="box-container container">
 
@@ -216,7 +261,7 @@ if (isset($_POST['submit'])) {
 
     <section class="reviews" id="reviews">
 
-        <h1 class="heading"> satisfied clients </h1>
+        <h1 class="heading"> Zadovoljni klijenti </h1>
 
         <div class="box-container container">
 
@@ -289,10 +334,10 @@ if (isset($_POST['submit'])) {
             <input type="text" name="name" placeholder="enter your name" class="box" required>
             <span>Your email:</span>
             <input type="email" name="email" placeholder="enter your email" class="box" required>
-            <span>Your number:</span>
-            <input type="number" name="number" placeholder="enter your number" class="box" required>
-            <span>appointment date:</span>
-            <input type="datetime-local" name="date" class="box" required>
+            <!-- <span>Your number:</span>
+            <input type="number" name="number" placeholder="enter your number" class="box" required> -->
+            <span>send message:</span>
+            <textarea name="send" rows="5" class="box" required></textarea>
             <input type="submit" value="kontakt" name="submit" class="link-btn">
         </form>
     </section>
