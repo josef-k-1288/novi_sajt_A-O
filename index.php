@@ -55,11 +55,12 @@ if (isset($_POST['submit'])) {
 
 
                 <nav class="nav">
-                    <a href="#home">home</a>
-                    <a href="#about">about</a>
-                    <a href="#services">services</a>
-                    <a href="#reviews">reviews</a>
-                    <a href="#contact">contact</a>
+                    <a href="#home">početna</a>
+                    <a href="#about">o nama</a>
+                    <a href="#services">naši servisi</a>
+                    <a href="#process">proces izrade</a>
+                    <!-- <a href="#reviews">zadovoljni klijenti</a> -->
+                    <a href="#contact">kontakt</a>
                 </nav>
 
                 <a href="#contact" class="link-btn">Kontakt</a>
@@ -145,8 +146,8 @@ if (isset($_POST['submit'])) {
             </div>
 
             <div class="box">
-                <img src="images/nove_ikonice/responsive.svg" alt="">
-                <h3>Responzivni dizajn</h3>
+                <img src="images/nove_ikonice/shop-cart.svg" alt="">
+                <h3>Woocomerce</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
             </div>
 
@@ -195,7 +196,7 @@ if (isset($_POST['submit'])) {
             <div class="box">
                 <i class="fa-brands fa-js"></i>
                 <h3>Javascript</h3>
-               
+
             </div>
 
             <div class="box">
@@ -206,11 +207,11 @@ if (isset($_POST['submit'])) {
             <div class="box">
                 <i class="fa-brands fa-wordpress"></i>
                 <h3>Wordpress</h3>
-                
+
             </div>
         </div>
 
-        
+
     </section>
 
     <!-- icons subsection ends -->
@@ -222,13 +223,13 @@ if (isset($_POST['submit'])) {
 
     <!-- process section start -->
 
-    <section class="process">
+    <section class="process" id="process">
         <h1 class="heading">proces izrade</h1>
 
         <div class="box-container container">
 
             <div class="box">
-                <img src="images/process-1.png" alt="">
+                <img src="images/nove_ikonice/contact.svg" alt="">
                 <h3>kontakt</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
             </div>
@@ -236,15 +237,21 @@ if (isset($_POST['submit'])) {
 
 
             <div class="box">
-                <img src="images/process-2.png" alt="">
-                <h3>planiranje</h3>
+                <img src="images/nove_ikonice/deal.svg" alt="">
+                <h3>plan</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
             </div>
 
 
 
             <div class="box">
-                <img src="images/process-3.png" alt="">
+                <img src="images/nove_ikonice/responsive.svg" alt="">
+                <h3>dizajn</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+
+            <div class="box">
+                <img src="images/nove_ikonice/code.svg" alt="">
                 <h3>razvoj</h3>
                 <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
             </div>
@@ -353,7 +360,7 @@ if (isset($_POST['submit'])) {
             <div class="box">
                 <i class="fas fa-phone"></i>
                 <h3>phone number</h3>
-                <p>+123-456-7890</p>
+                <p>069/3315-316</p>
                 <p>+111-222-333</p>
             </div>
 
