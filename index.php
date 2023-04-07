@@ -1,5 +1,5 @@
 <?php
-$conn = mysqli_connect('localhost', 'root', '', 'novi_sajt_ao') or die('connect failed');
+$conn = mysqli_connect('localhost', 'aoweb_aoweb', '544Sadsff5554Rv', 'aoweb_novi_sajt') or die('connect failed');
 
 if (isset($_POST['submit'])) {
     $name = mysqli_real_escape_string($conn, $_POST['name']);
@@ -263,6 +263,66 @@ if (isset($_POST['submit'])) {
 
     <!-- process section ends -->
 
+
+
+
+
+
+
+
+
+
+
+    <!-- porfolio section starts -->
+
+    <h1 class="heading">Neki od naših projekata</h1>
+    <div class="holder">
+        <div class="img-item">
+            <img src="images/portfolio/pokret.png" alt="Kratak opis projekta">
+            <a href="#">Pogledaj</a>
+        </div>
+        <div class="img-item">
+            <img src="images/portfolio/galis.png" alt="Kratak opis projekta">
+            <a href="#">Pogledaj</a>
+        </div>
+        <div class="img-item">
+            <img src="images/portfolio/pokret.png" alt="Kratak opis projekta">
+            <a href="#">Pogledaj</a>
+        </div>
+        <div class="img-item">
+            <img src="images/portfolio/neosmile.png" alt="Kratak opis projekta">
+            <a href="#">Pogledaj</a>
+        </div>
+        <div class="img-item">
+            <img src="images/portfolio/galis.png" alt="Kratak opis projekta">
+            <a href="#">Pogledaj</a>
+        </div>
+        <div class="img-item">
+            <img src="images/portfolio/pokret.png" alt="Kratak opis projekta">
+            <a href="#">Pogledaj</a>
+        </div>
+        <div class="img-item">
+            <img src="images/portfolio/neosmile.png" alt="Kratak opis projekta">
+            <a href="#">Pogledaj</a>
+        </div>
+        <div class="img-item">
+            <img src="images/portfolio/pokret.png" alt="Kratak opis projekta">
+            <a href="#">Pogledaj</a>
+        </div>
+        <div class="img-item">
+            <img src="images/portfolio/pokret.png" alt="Kratak opis projekta">
+            <a href="#">Pogledaj</a>
+        </div>
+        <br><br>
+    </div>
+
+    <!-- portfolio section ends -->
+
+
+
+
+
+
     <!-- reviews section starts -->
 
 
@@ -319,6 +379,10 @@ if (isset($_POST['submit'])) {
     </section>
 
     <!-- reviews sections ends -->
+
+
+
+
 
 
 

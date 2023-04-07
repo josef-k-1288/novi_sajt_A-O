@@ -78,6 +78,7 @@ section {
 .header {
     padding: 2rem;
     border-bottom: var(--border);
+    background-color: var(--white);
 }
 
 .header.active {
@@ -97,12 +98,12 @@ section {
 
 .header .nav a {
     margin: 0 1rem;
-    font-size: 1.7rem;
+    font-size: 1.8rem;
     color: var(--black);
 }
 
 .header .nav a:hover {
-    color: var(--blue);
+    color: var(--border);
 }
 
 #menu-btn {
@@ -312,6 +313,65 @@ section {
 
 
 /* process section ends */
+
+
+
+
+
+
+
+/* portfolio-section starts*/
+
+  
+  .holder {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    max-width: 1000px;
+    grid-gap: 1rem;
+    margin: 0 auto;
+  }
+  
+  .img-item {
+    position: relative;
+    height: 200px;
+  }
+  
+  .img-item a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.5rem 0.8rem;
+    background-color: #0c1f30;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .img-item a:hover {
+    background-color: #184b77;
+  }
+  
+  .img-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  @media screen and (max-width: 900px) {
+    .img-item {
+      padding: 0 1rem;
+    }
+    h1 {
+      font-size: 2rem;
+      margin: 1.1rem 0;
+    }
+  }
+
+/* portfolio-section ends */
+
+
+
+
 
 
 /* reviews section start */
